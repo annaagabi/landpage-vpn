@@ -3,6 +3,8 @@
 :root{
     --main-color: #F53855;
     --shadow-button-color: #f5385559;
+    --main-color-text: #4F5665;
+    --text-color-titles: #0B132A;
 }
 *{
     margin: 0;
@@ -28,9 +30,10 @@ header{
     /* font-size: 20px; */
 }
 
-.logo-container h1{
+.logo-container h1, strong{
     font-weight: 500;
     font-size: 20px;
+    color: var(--text-color-titles);
 }
 
 .logo-container img{
@@ -45,7 +48,7 @@ nav{
 }
 
 nav a {
-    color: #4F5665;
+    color: var(--main-color-text);
     font-size: 16px;
 }
 
@@ -100,7 +103,7 @@ button{
     width: 250px;
     height: 60px;
     background-color: var(--main-color);
-    color: white;
+    color: #FFFFFF;
     margin-top: 50px;
     font-size: 16px;
     font-weight: 700;
@@ -130,12 +133,12 @@ button{
 
 .card-info p{
     font-size: 20px;
-    color: #4F5665;
+    color: var(--main-color-text);
 }
 
 .card-info p strong{
     font-size: 25px;
-    color: #0B132A;
+    color: var(--text-color-titles);
 }
 
 .card-info img{
