@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-
+:root{
+    --main-color: #F53855;
+    --shadow-button-color: #f5385559;
+}
 *{
     margin: 0;
     padding: 0;
@@ -59,13 +62,15 @@ button{
 
 .acess-container :last-child{
     border-radius: 50px;
-    border: 1px solid #F53855;
+    border: 1px solid var(--main-color);
     width: 150px;
     height: 45px;
-    color: #F53855;
+    color: var(--main-color);
     padding: 13px 45px;
     font-weight: 500;
 }
+
+/* PRIMEIRA SEÇÃO*/
 
 .about-container{
     display: flex;
@@ -94,9 +99,131 @@ button{
     border-radius: 10px;
     width: 250px;
     height: 60px;
-    background-color: #F53855;
+    background-color: var(--main-color);
     color: white;
     margin-top: 50px;
     font-size: 16px;
     font-weight: 700;
+    /* box-shadow: 10px 10px 20px rgba(245, 56, 85, 0.35); */
+    box-shadow: 0px 20px 40px var(--shadow-button-color);
+
+}
+
+/* SEGUNDA SEÇÃO*/
+
+.info-container{
+    margin-top: 103px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-info{
+    width: 1140px;
+    height: 200px;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px #00000017;
+}
+
+.card-info p{
+    font-size: 20px;
+    color: #4F5665;
+}
+
+.card-info p strong{
+    font-size: 25px;
+    color: #0B132A;
+}
+
+.card-info img{
+    padding-right: 37px;
+    padding-left: 91px;
+}
+
+.line{
+    height: 126px;
+    border: 2px solid #EEEFF2;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    padding-right: 130px;
+}
+
+
+@media(max-width: 700px){
+
+    /* PRIMEIRA SEÇÃO*/
+    .about-container{
+        flex-direction: column-reverse;
+        
+    }
+    .about-container img {
+        width: 306px;
+        height: auto;
+    }
+
+    .section-content{
+        text-align: center;
+    }
+    .section-content h2{
+        text-align: center;
+        font-size: 30px;
+    }
+    .section-content p{
+        font-size: 11px;
+        text-align: justify;
+        padding: 20px;
+    }
+    .section-content button{
+        border-radius: 5px;
+        width: 124px;
+        height: 35px;
+        font-size: 12px;
+        font-weight: 600;
+        box-shadow: 0px 10px 20px var(--shadow-button-color);
+        margin-top: 10px;
+    }
+
+    /* SEGUNDA SEÇÃO*/
+
+    .info-container{
+        margin: 32px 22px;
+    }
+    .card-info{
+        max-width: 600px;
+        height: auto;
+    }
+
+    .card-info img{
+        width: 50px;
+        height: 50px;
+        padding-right: 3px;
+        padding-left: 15px;
+    }
+
+    .card-info p{
+        font-size: 8px;
+    }
+    
+    .card-info p strong{
+        font-size: 12px;
+    }
+
+    .info{
+        padding: 26px;
+    }
+    .line{
+        max-height: 23px;
+        border: 1px solid #EEEFF2;
+    }
+
+    /* TERCEIRA SEÇÃO*/
+
 }
