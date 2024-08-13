@@ -363,8 +363,6 @@ footer{
     background-color: #F8F8F8;
     display: flex;
     justify-content: space-around;
-    /* gap: 230px; */
-    /* flex-direction: column; */
 }
 
 .footer-column-1{
@@ -382,11 +380,6 @@ footer{
     font-size: 16px;
     padding: 15px 0;
 }
-/* .footer-column-1 img{
-    text-align: justify;
-    display: flex;
-    flex-direction: row;
-} */
 
 #year{
     color: #AFB5C0;
@@ -395,7 +388,6 @@ footer{
 .footer-content{
     margin-top: 66px;
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     gap: 126px;
 }
