@@ -354,6 +354,121 @@ button{
     margin-top: 20px;
 }
 
+/* SEXTA SEÇÃO*/
+
+.comments-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.comments-container h2{
+    color: var(--text-color-titles);
+    font-size: 35px;
+    width: 448px;
+    padding: 20px;
+}
+.comments-container #text-h2{
+    color: var(--main-color-text);
+    font-size: 16px;
+    width: 555px;
+}
+.comments-content{
+    margin-top: 60px;
+    display: flex;
+    gap: 18px;
+    margin-left: 96px;
+}
+.card-comments{
+    border: 2px solid  var(--border-color);
+    border-radius: 10px;
+    display: flex;
+    width: 400px;
+    height: 230px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-comments:hover{
+    border: 2px solid  var(--main-color);
+}
+
+.card-comments #comment{
+    color: var(--text-color-titles);
+    font-size: 16px;
+    text-align: justify;
+    padding: 15px;
+    width: 340px;
+}
+.comment-info{
+    display: flex;
+}
+
+.comment-info {
+    display: flex;
+    justify-content: space-between;
+    width: 340px;
+    padding: 15px 0;
+}
+
+.comment-details {
+    display: flex;
+    align-items: center;
+}
+
+.comment-details img {
+    padding-right: 10px;
+}
+
+.comment-text h4 {
+    color: var(--text-color-titles);
+    font-size: 18px;
+    margin: 0;
+}
+
+.comment-text p {
+    color: var(--main-color-text);
+    font-size: 14px;
+    margin: 0;
+}
+
+.comment-grade {
+    display: flex;
+    align-items: center;
+}
+
+.comment-grade p {
+    color: var(--text-color-titles);
+    font-size: 16px;
+    margin: 0;
+    padding-right: 5px;
+}
+
+.comment-grade img {
+    width: 20px; 
+    height: auto;
+}
+
+.comment-button{
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    margin-top: 60px;
+    width: 100%;
+}
+
+.button-area{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+/* SÉTIMA SEÇÃO*/
+
 
 
 
@@ -525,7 +640,6 @@ footer{
     }
 
     .card-price{
-        /* display: none; */
         align-items: center;
         border: 1px solid var(--border-color);
         border-radius: 5px;
@@ -565,7 +679,6 @@ footer{
         font-size: 9px;
         padding: 5px 0;
         align-self: flex-start;
-        /* gap: 0px; */
     }
     .price-vantages img{
         width: 15px;
@@ -600,7 +713,94 @@ footer{
         height: 65px;
         margin-top: 38px;
     }
+
     /* SEXTA SEÇÃO*/
+    .comments-container{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .comments-container h2{
+        font-size: 16px;
+        width: 200px;
+        padding: 10px;
+    }
+    .comments-container #text-h2{
+        font-size: 10px;
+        width: 313px;
+    }
+    .comments-content{
+        margin-top: 30px;
+        gap: 12px;
+        margin-left: 14px;
+        flex-direction: column;
+    }
+    .card-comments{
+        border: 0.6px solid  var(--border-color);
+        border-radius: 5px;
+        width: 258px;
+        height: 129px;
+    }
+    .card-comments:hover{
+        border: 0.6px solid  var(--main-color);
+    }
+    
+    .card-comments #comment{
+        font-size: 10px;
+        padding: 5px;
+        width: 210px;
+    }
+    
+    .comment-info{
+        display: flex;
+    }
+    
+    .comment-info {
+        width: 207px;
+        padding: 10px 0;
+    }
+    
+    .comment-details img {
+        padding-right: 10px;
+        width: 50px; 
+        height: auto;
+    }
+    
+    .comment-text h4 {
+        font-size: 12px;
+    }
+    
+    .comment-text p {
+        font-size: 10px;
+    }
+    
+    .comment-grade p {
+        font-size: 10px;
+    }
+    
+    .comment-grade img {
+        width: 11px; 
+    }
+    .comment-button{
+        margin-top: 21px;
+        width: 314px;
+    }
+    .comment-button img{
+        width: 77px;
+        height: auto;
+    }
+
+    .comment-button button img{
+        width: 30px;
+        height: auto;
+    }
+    
+    .button-area{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        
+    }
+
     /* SÉTIMA SEÇÃO*/
 
     /* FOOTER */
