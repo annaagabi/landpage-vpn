@@ -76,6 +76,10 @@ input[type=checkbox]{
 button{
     background-color: transparent;
     font-weight: 500;
+    width: 50px;
+}
+button:hover{
+    cursor: pointer;
 }
 
 .acess-container :last-child{
@@ -84,7 +88,7 @@ button{
     width: 150px;
     height: 45px;
     color: var(--main-color);
-    padding: 13px 45px;
+    /* padding: 13px 45px; */
     font-weight: 500;
 }
 
