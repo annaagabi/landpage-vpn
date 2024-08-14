@@ -7,27 +7,31 @@
     <link rel="stylesheet" href="./src/style/style.css">
 </head>
 <body>
-    <!-- <header>
+    <header>
         <div class="logo-container">
             <img src="./src/assets/images/logo-icon.svg" alt="Logo da LandPage VPN">
             <h1>Support<b>VPN</b></h1>
         </div>
 
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776; </label>
+
         <nav>
-            <a href="#">About</a>
-            <a href="#">Features</a>
-            <a href="#">Pricing</a>
-            <a href="#">Testimonial</a>
+           
+            <a href="#about-container">About</a>
+            <a href="#features-container">Features</a>
+            <a href="#price-container">Pricing</a>
+            <a href="#comments-container">Testimonial</a>
             <a href="#">Help</a>
+            <div class="acess-container">
+                <button type="button">Sign In</button>
+                <button type="button">Sign Up</button>
+            </div>
         </nav>
 
-        <div class="acess-container">
-            <button type="button">Sign In</button>
-            <button type="button">Sign Up</button>
-        </div>
-    </header> -->
+    </header>
 
-    <section class="about-container">
+    <section class="about-container" id="about-container">
 
         <div class="section-content">
             <h2>Want anything to be easy with <b>SupportVPN</b></h2>
@@ -63,7 +67,7 @@
         </div>
     </section>
 
-    <section class="features-container">
+    <section class="features-container" id="features-container">
         <img src="./src/assets/images/features-ilustration.svg" alt="Homem de fone em frente ao computador com a mão esquerda levantada">
 
         <div class="features-content">
@@ -89,7 +93,7 @@
         </div>
     </section>
 
-    <section class="price-container">
+    <section class="price-container" id="price-container">
         <h2>Choose Your Plan</h2>
         <p>Let's choose the package that is best for you and explore it happily and cheerfully.</p>
 
@@ -141,7 +145,7 @@
                 </div>
                 <h3>$9 <span>/ mo</span></h3>
                 <button type="button">Select</button>
-            </div> <!-- card-price -->
+            </div>
             <div class="card-price">
                 <img src="./src/assets/images/Box.svg" alt="Caixa aberta soltando fogos">
                 <h4>Free Plan</h4>
@@ -171,14 +175,14 @@
                 </div>
                 <h3>$12 <span>/ mo</span></h3>
                 <button type="button">Select</button>
-            </div> <!-- card-price -->
+            </div>
         </div>
     </section>
 
     <section class="map-container">
         <h2>Huge Global Network of Fast VPN</h2>
         <p>See <strong>SuporteVPN</strong> everywhere to make it easier for you when you move locations.</p>
-        <img src="./src/assets/images/Map.svg" alt="Mapa com regiões marcadas" id="map">
+        <img src="./src/assets/images/Map.svg" alt="Mapa com regiões marcadas" id="map"> 
         <!-- <div class="carousel-img">
             <img src="./src/assets/images/Netflix.svg" alt="Netflix">
             <img src="./src/assets/images/Reddit.svg" alt="Reddit">
@@ -189,7 +193,7 @@
         <img src="./src/assets/images/Carousel.svg" alt="Carrossel de imagens com as seguintes redes sociais: discord, reddit, amazon, discor e spotify" id="carousel">
     </section>
 
-    <section class="comments-container">
+    <section class="comments-container" id="comments-container">
         <h2>Trusted by Thousands of Happy Customer</h2>
         <p id="text-h2">These are the stories of our customers who have joined us with great pleasure when using this crazy feature.</p>
             <div class="comments-content">
@@ -261,7 +265,7 @@
             <button type="button">Subscrible Now</button>
         </div>
     </section>
-    
+
     <footer>
         <div class="footer-column-1">
             <div class="logo-container">
@@ -300,6 +304,6 @@
                 <p>Affilite</p>
             </div>
         </div>
-    </footer>
+    </footer> 
 </body>
 </html>
