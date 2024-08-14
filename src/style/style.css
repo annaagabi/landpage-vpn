@@ -19,7 +19,7 @@
 
 header{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin-top: 46px;
 }
@@ -29,7 +29,7 @@ header{
     align-items: center;
     margin-right: 117px;
     gap: 10px;
-    /* font-size: 20px; */
+    margin-left: 100px;
 }
 
 .logo-container h1, strong{
@@ -46,18 +46,31 @@ header{
 nav{
     display: flex;
     margin-right: 153px;
-    gap:37px;
+    gap: 37px;
+    align-items: center;
 }
 
 nav a {
     color: var(--main-color-text);
     font-size: 16px;
 }
+input[type=checkbox]{
+    display: none;
+}
+
+/*HAMBURGER MENU*/
+.hamburger {
+    display: none;
+    font-size: 30px;
+    user-select: none;
+}
 
 .acess-container{
     display: flex;
     gap: 30px;
     font-size: 16px;
+    margin-left: 50px;
+    
 }
 
 button{
@@ -109,7 +122,6 @@ button{
     margin-top: 50px;
     font-size: 16px;
     font-weight: 700;
-    /* box-shadow: 10px 10px 20px rgba(245, 56, 85, 0.35); */
     box-shadow: 0px 20px 40px var(--shadow-button-color);
 
 }
@@ -561,6 +573,70 @@ footer{
  
 
 @media(max-width: 700px){
+
+    /* HEADER */
+
+    header{
+        flex-direction: row;
+        padding: 0 40px;
+    }
+
+    .logo-container{
+        margin-right: 0px;
+        gap: 10px;
+        margin-left: 10px;
+    }
+    
+    .logo-container h1, strong{
+        font-size: 15px;
+    }
+    
+    .logo-container img{
+        height: 20px;
+        width: 20px;
+    }
+    
+    .acess-container{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        font-size: 12px;
+        margin-left: 0px;
+        
+    }
+    nav{
+        display: none;
+        position: absolute;
+        text-align: left;
+        padding: 16px 0;
+        flex-direction: column;
+        gap: 20px;
+        right: 0;
+        margin-right: 20px;
+        top: 100px;
+    }
+
+    nav a{
+        font-size: 12px;
+    }
+
+    input[type=checkbox]:checked ~ nav{
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+    
+    .acess-container :last-child{
+        border-radius: 50px;
+        border: 1px solid var(--main-color);
+        width: 90px;
+        height: 35px;
+        color: var(--main-color);
+        padding: 0px;
+        font-size: 12px;
+    }
 
     /* PRIMEIRA SEÇÃO*/
     .about-container{
