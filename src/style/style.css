@@ -542,6 +542,9 @@ footer{
    width: 340px;
    padding: 20px;
 }
+.footer-column-1 .logo-container{
+   margin: 0;
+}
 .footer-column-1 p strong{
     color: var(--main-color-text);
     font-size: 16px;
