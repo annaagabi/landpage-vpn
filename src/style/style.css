@@ -379,6 +379,7 @@ button:hover{
     flex-direction: column;
     margin-top: 50px;
     text-align: center;
+    overflow: hidden;
 }
 .comments-container h2{
     color: var(--text-color-titles);
